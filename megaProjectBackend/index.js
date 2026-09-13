@@ -33,12 +33,13 @@ cloudinaryConnect();
 // middleware 
 app.use(express.json()) ;
 app.use(cookieParser());
-app.use(cors(
-    {
-        origin:["http://localhost:3000","http://localhost:5173"],
-        credential:true,
-    }
-));
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:5173",
+  ],
+  credentials: true,
+}));
 
 app.use(fileUpload({
     useTempFiles:true,
@@ -54,11 +55,16 @@ app.use("/api/v1/payment", paymentRoutes);
 
 // default of route;
 
-app.get("/", (req , res )=>{
-    console.log("your server is running successfully")
-
-})
+app.get("/", (req, res) => {
+  console.log("Server is running successfully");
+  return res.status(200).json({
+    success: true,
+    message: "StudyNotion backend is running",
+  });
+});
 
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+
