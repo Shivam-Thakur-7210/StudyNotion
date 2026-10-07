@@ -5,10 +5,7 @@ const userRoutes = require("./routes/User");
 const profileRoutes = require("./routes/Profile");
 const paymentRoutes = require("./routes/Payments");
 const courseRoutes = require("./routes/Course");
-// console.log("userRoutes:", userRoutes);
-// console.log("profileRoutes:", profileRoutes);
-// console.log("courseRoutes:", courseRoutes);
-// console.log("paymentRoutes:", paymentRoutes);
+
 
 
 const database = require("./config/database");
@@ -35,8 +32,7 @@ app.use(express.json()) ;
 app.use(cookieParser());
 app.use(cors({
   origin: [
-    "http://localhost:3000",
-    "http://localhost:5173",
+    '*'
   ],
   credentials: true,
 }));
