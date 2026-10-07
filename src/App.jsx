@@ -5,7 +5,7 @@ import OpenRoute from './component/core/Auth/OpenRoute'
 
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
-import NavBar from './component/common/Navbar';
+import NavBar from './component/common/NavBar';
 
 import Login from './pages/Login';
 
