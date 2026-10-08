@@ -1,5 +1,5 @@
 import HighlightText from "./HighlightText";
-import KnowYourProgress from "../../../assets/Images/know_your_progress.png";
+import KnowYourProgress from "../../../assets/Images/Know_your_progress.png"
 import compareWithOthers from "../../../assets/Images/compare_with_others.png";
 import planYourLessons from "../../../assets/Images/plan_your_lessons.png";
 import CTAButton from "./Button";
