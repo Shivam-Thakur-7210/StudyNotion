@@ -1,7 +1,8 @@
 import HighlightText from "./HighlightText";
 import KnowYourProgress from "../../../assets/Images/Know_your_progress.png"
-import compareWithOthers from "../../../assets/Images/compare_with_others.png";
-import planYourLessons from "../../../assets/Images/plan_your_lessons.png";
+
+import compareWithOthers from "../../../assets/Images/Compare_with_others.png"
+import planYourLessons from "../../../assets/Images/Plan_your_lessons.png";
 import CTAButton from "./Button";
 
 const LearningLanguageSection = ()=>{
